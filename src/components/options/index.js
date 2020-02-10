@@ -5,4 +5,4 @@ import Display from './OptionsDisplay';
 import Sound from './OptionsSound';
 import Info from './OptionsInfo';
 
-export {Save,Load,Reset,Display,Sound,Info};
+export { Save, Load, Reset, Display, Sound, Info };

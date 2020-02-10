@@ -4,4 +4,4 @@ import Skills from './HeroSkills';
 import Abilities from './HeroAbilities';
 import Items from './HeroItems';
 
-export {Stats,Gear,Skills,Abilities,Items};
+export { Stats, Gear, Skills, Abilities, Items };

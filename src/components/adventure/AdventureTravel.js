@@ -3,7 +3,7 @@ import React from 'react';
 const AdventureTravel = props => {
     return (
         <div className="Adventure-Travel">
-            AdventureTravel
+            <div className='hex'/>
         </div>
     )
 }

@@ -131,7 +131,9 @@ table {
   border-spacing: 0;
 }
 .Header {
-  box-shadow: 3px 3px 10px #333;
+  margin-top: 10px;
+  box-shadow: 3px 3px 3px #13293d;
+  margin-bottom: 30px;
 }
 .Header .Title-Card {
   display: flex;
@@ -139,26 +141,27 @@ table {
   height: 70px;
   margin: 0 auto;
   padding: 10px;
-  background-color: #BBF;
+  background-color: #006494;
+  color: #e8f1f2;
 }
 .Header .Title-Card .Title {
-  font-size: 3rem;
+  font-size: 4.2rem;
   padding-right: 10px;
 }
 .Header .Title-Card .Game-Version {
   padding-right: 20px;
 }
 .Header .Title-Card .Subtitle {
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   letter-spacing: 2px;
 }
 .Header .Main-Menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 2.5rem;
+  height: 4rem;
   margin: 0 auto;
-  background-color: #BBF;
+  background-color: #13293d;
 }
 .Header .Main-Menu div {
   display: flex;
@@ -166,11 +169,11 @@ table {
   justify-content: center;
   align-items: center;
   width: 24%;
-  height: 70%;
-  font-size: 1.4rem;
-  background-color: #BBB;
-  box-shadow: 3px 3px 10px #333;
-  cursor: pointer;
+  height: 3rem;
+  font-size: 2rem;
+  background-color: #1b98e0;
+  color: #e8f1f2;
+  cursor: default;
 }
 .Header .Main-Menu div .dropdown {
   display: none;
@@ -185,25 +188,74 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 2rem;
-  min-width: 100%;
-  background-color: #DDD;
-  color: #000;
-  text-align: center;
-  border-bottom: 1px solid #446;
+  height: 2.75rem;
+  width: 100%;
+  background-color: #1b98e0;
+  color: #e8f1f2;
+  border-bottom: 1px solid #13293d;
 }
 .Header .Main-Menu div .dropdown li:first-child {
-  border-top: 1px solid #446;
+  border-top: 1px solid #13293d;
 }
 .Header .Main-Menu div .dropdown li:last-child {
   border-bottom: none;
 }
 .Header .Main-Menu div .dropdown li:hover {
-  background-color: #333;
-  color: #EEE;
+  background-color: #13293d;
 }
 .Header .Main-Menu div:hover .dropdown {
   display: block;
+}
+.Header .Main-Menu.disabled {
+  display: none;
+}
+.file-select.home {
+  border: 1px solid #13293d;
+  background-color: #13293d;
+  color: #e8f1f2;
+}
+.file-select.home h1 {
+  border-bottom: 1px solid #13293d;
+  text-align: center;
+  font-size: 4.8rem;
+  margin: 10px;
+  padding: 15px 0;
+  background-color: #006494;
+}
+.file-select.home .file-div {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #13293d;
+  font-size: 1.8rem;
+  margin: 10px 20px;
+  padding: 20px;
+  background-color: #1b98e0;
+}
+.file-select.home .file-div:hover {
+  background-color: #006494;
+}
+.hero-creation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1b98e0;
+  height: 350px;
+}
+.hero-creation .text-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-creation .stats-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.hero-creation .stats-form .unspent-stats {
+  display: inline;
 }
 .Hero-Stats,
 .Hero-Gear,
@@ -213,19 +265,27 @@ table {
   max-width: 1450px;
   margin: 20px auto;
   box-shadow: 3px 3px 10px #333;
-  background-color: #BBB;
+  background-color: #bbb;
   padding: 5px;
 }
 .unspent-stats,
 .stat-button {
-  margin: 2px 0;
-  margin-left: 5px;
+  margin: 8px;
   border-radius: 3px;
   padding: 3px;
   font-family: monospace;
   font-weight: bold;
   box-shadow: 1px 1px 3px #555;
-  background-color: #7F7;
+  background-color: #7f7;
+}
+.lower-button {
+  margin: 5px;
+  border-radius: 3px;
+  padding: 3px;
+  font-family: monospace;
+  font-weight: bold;
+  box-shadow: 1px 1px 3px #555;
+  background-color: #f77;
 }
 .Hero-Gear .gear-display {
   width: 50%;
@@ -247,9 +307,14 @@ table {
   text-align: center;
   padding: 5px;
 }
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #eee;
+  font-size: 1.6rem;
+}
 .App {
-  min-height: 100vh;
-  background-color: #EEE;
   font-family: monospace;
 }
 .App .container {
